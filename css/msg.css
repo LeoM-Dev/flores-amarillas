@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+:root {
+    --black: #121214;
+    --white: #f7f5f6;
+    --yelow: #fbff00;
+}
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: var(--white);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.description {
+    width:80%;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 16px;
+    text-align:left;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom:30px;
+    color: var(--black);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+button {
+    background-color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+
+button a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+button:hover {
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+}
+
+@media screen and (max-width:700px){
+
+    div{
+        font-size: 1rem;
+    }
+
+    .button a{
+        font-size: 1rem;
+    }
+}
